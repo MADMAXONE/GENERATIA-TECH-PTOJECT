@@ -1,0 +1,11 @@
+body {
+  background: rgb(0,0,0);
+  color: rgb(255,255,255);
+}
+
+#bgPhoto1 {
+  width: 100%;
+  height: 100vh;
+  background: url("../../assets/img/bg%20with%20food.jpeg") center / cover no-repeat;
+}
+

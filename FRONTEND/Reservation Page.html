@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>RESTAURANT WEB APP</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almendra+SC&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barrio&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/Basic-fancyBox-Gallery-v2.css">
+    <link rel="stylesheet" href="assets/css/cards-d_style.css">
+    <link rel="stylesheet" href="assets/css/Competences-Grid---3-Columns---Hover-Effect-Pop---Icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Centered-Links-icons.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
+    <link rel="stylesheet" href="assets/css/News-Cards.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer-.css">
+    <link rel="stylesheet" href="assets/css/ReviewCard.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body py-3">
+        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: rgb(0,0,0);"><i class="material-icons" style="font-size: 25px;">local_dining</i></span><span style="font-size: 24px;"><strong>ECHIMBURI RESTAURANT</strong></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" id="home-button"><a class="nav-link active" data-bss-hover-animate="pulse" id="home-window" href="Welcome%20Page.html" style="font-size: 20px;"><strong>Acasă</strong></a></li>
+                    <li class="nav-item"><a class="nav-link active d-none" data-bss-hover-animate="pulse" id="connect-window-2" href="Reservation%20Display%20Page.html" style="font-size: 20px;"><strong>Rezervări</strong></a></li>
+                    <li class="nav-item"><a class="nav-link active d-none" data-bss-hover-animate="pulse" id="connect-window-1" href="Orders%20Display%20Page.html" style="font-size: 20px;"><strong>Comenzi</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" id="menu-window" href="Menu%20Page.html" style="color: var(--bs-navbar-active-color);font-size: 20px;"><strong>Meniu</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" id="reservation-window" href="Reservation%20Page.html" style="font-weight: bold;color: var(--bs-navbar-active-color);font-size: 20px;">Rezervare</a></li>
+                </ul><a class="btn btn-primary ms-md-2" role="button" data-bss-hover-animate="pulse" id="cart-window" href="Cart%20Page.html" style="background: var(--bs-navbar-brand-color);border-color: var(--bs-black);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="font-size: 30px;">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z" fill="currentColor"></path>
+                        <path d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z" fill="currentColor"></path>
+                        <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="currentColor"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container -lg my-5" style="text-align: center;">
+        <h1 style="text-align: center;font-weight: bold;padding: 19px;">Verifică disponibilitatea meselor!</h1>
+        <h6 style="text-align: center;padding: 19px;margin-top: -33px;">Toate mesele care sunt afișate, sunt mese disponibile.</h6><input data-bss-hover-animate="pulse" id="date-input-check-availability" type="date">
+    </div>
+    <div class="container" style="text-align: center;margin-top: -37px;margin-bottom: 38px;"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="button-check-availability" type="button" style="background: var(--bs-danger);border-color: rgb(0,0,0);padding: 8px 20px;margin: -2px;" data-toggle="modal" data-target="#modal-review-box" data-bs-target="#add-review-modal" data-bs-toggle="modal"><strong>Verifică Disponibilitatea!&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="font-size: 23px;">
+                <path d="M8.55024 10.5503C8.55024 11.1026 8.10253 11.5503 7.55024 11.5503C6.99796 11.5503 6.55024 11.1026 6.55024 10.5503C6.55024 9.99801 6.99796 9.55029 7.55024 9.55029C8.10253 9.55029 8.55024 9.99801 8.55024 10.5503Z" fill="currentColor"></path>
+                <path d="M10.5502 11.5503C11.1025 11.5503 11.5502 11.1026 11.5502 10.5503C11.5502 9.99801 11.1025 9.55029 10.5502 9.55029C9.99796 9.55029 9.55024 9.99801 9.55024 10.5503C9.55024 11.1026 9.99796 11.5503 10.5502 11.5503Z" fill="currentColor"></path>
+                <path d="M13.5502 11.5503C14.1025 11.5503 14.5502 11.1026 14.5502 10.5503C14.5502 9.99801 14.1025 9.55029 13.5502 9.55029C12.998 9.55029 12.5502 9.99801 12.5502 10.5503C12.5502 11.1026 12.998 11.5503 13.5502 11.5503Z" fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2071 4.89344C19.0922 7.7786 19.313 12.3192 16.8693 15.4577C16.8846 15.4712 16.8996 15.4853 16.9142 15.4999L21.1568 19.7426C21.5473 20.1331 21.5473 20.7663 21.1568 21.1568C20.7663 21.5473 20.1331 21.5473 19.7426 21.1568L15.5 16.9141C15.4853 16.8995 15.4713 16.8846 15.4578 16.8693C12.3193 19.3131 7.77858 19.0923 4.89338 16.2071C1.76918 13.083 1.76918 8.01763 4.89338 4.89344C8.01757 1.76924 13.0829 1.76924 16.2071 4.89344ZM6.30759 14.7929C8.65074 17.1361 12.4497 17.1361 14.7929 14.7929C17.136 12.4498 17.136 8.6508 14.7929 6.30765C12.4497 3.96451 8.65074 3.96451 6.30759 6.30765C3.96445 8.6508 3.96445 12.4498 6.30759 14.7929Z" fill="currentColor"></path>
+            </svg></button></div>
+    <section>
+        <div class="container" id="tables-container" style="text-align: center;height: 435.5px;" data-bs-smooth-scroll="true">
+            <div class="float-end">
+                <div class="container">
+                    <div class="cust_bloglistintro">
+                        <p style="margin-left:34px;color:rgba(255,255,255,0.5);font-size:14px;"></p>
+                    </div>
+                    <div class="row" id="tables-check">
+                        <div class="col-md-4 cust_blogteaser" id="column-table-1" style="padding-bottom: 20px;margin-bottom: 32px;text-align: center;font-weight: bold;">
+                            <h3 id="heading-table-1" style="text-align: center;margin-top: 20px;font-family: 'Almendra SC', serif;font-size: 60px;margin-right: 0;margin-left: 24px;line-height: 34px;letter-spacing: 0px;font-style: normal;font-weight: bold;color: var(--bs-danger);">MASA 1</h3><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 40px;margin-top: 6px;">
+                                <g>
+                                    <rect fill="none" height="24" width="24"></rect>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M22,7.5C22,5.57,17.52,4,12,4S2,5.57,2,7.5c0,1.81,3.95,3.31,9,3.48V15H9.35c-0.82,0-1.55,0.5-1.86,1.26L6,20h2l1.2-3h5.6 l1.2,3h2l-1.5-3.74C16.2,15.5,15.46,15,14.65,15H13v-4.02C18.05,10.81,22,9.31,22,7.5z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col-md-4 cust_blogteaser" id="column-table-2" style="padding-bottom: 20px;margin-bottom: 32px;text-align: center;font-weight: bold;">
+                            <h3 id="heading-table-2" style="text-align: center;margin-top: 20px;font-family: 'Almendra SC', serif;font-size: 60px;margin-right: 0;margin-left: 24px;line-height: 34px;letter-spacing: 0px;font-style: normal;font-weight: bold;">MASA 2</h3><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 40px;color: var(--bs-danger);margin-top: 5px;">
+                                <g>
+                                    <rect fill="none" height="24" width="24"></rect>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M21.96,9.73l-1.43-5C20.41,4.3,20.02,4,19.57,4H4.43C3.98,4,3.59,4.3,3.47,4.73l-1.43,5C1.86,10.36,2.34,11,3,11h2.2L4,20 h2l0.67-5h10.67L18,20h2l-1.2-9H21C21.66,11,22.14,10.36,21.96,9.73z M6.93,13l0.27-2h9.6l0.27,2H6.93z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col-md-4 cust_blogteaser" id="column-table-3" style="padding-bottom: 20px;margin-bottom: 32px;text-align: center;font-weight: bold;">
+                            <h3 id="heading-table-3" style="text-align: center;margin-top: 20px;font-family: 'Almendra SC', serif;font-size: 60px;margin-right: 0;margin-left: 24px;line-height: 34px;letter-spacing: 0px;font-style: normal;font-weight: bold;color: var(--bs-danger);">MASA 3</h3><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 40px;margin-top: 5px;">
+                                <g>
+                                    <rect fill="none" height="24" width="24"></rect>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M22,7.5C22,5.57,17.52,4,12,4S2,5.57,2,7.5c0,1.81,3.95,3.31,9,3.48V15H9.35c-0.82,0-1.55,0.5-1.86,1.26L6,20h2l1.2-3h5.6 l1.2,3h2l-1.5-3.74C16.2,15.5,15.46,15,14.65,15H13v-4.02C18.05,10.81,22,9.31,22,7.5z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col-md-4 cust_blogteaser" id="column-table-4" style="padding-bottom: 20px;margin-bottom: 32px;text-align: center;font-weight: bold;">
+                            <h3 id="heading-table-4" style="text-align: center;margin-top: 20px;font-family: 'Almendra SC', serif;font-size: 60px;margin-right: 0;margin-left: 24px;line-height: 34px;letter-spacing: 0px;font-style: normal;font-weight: bold;">MASA 4</h3><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 40px;margin-top: 5px;color: var(--bs-danger);">
+                                <g>
+                                    <rect fill="none" height="24" width="24"></rect>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M22,7.5C22,5.57,17.52,4,12,4S2,5.57,2,7.5c0,1.81,3.95,3.31,9,3.48V15H9.35c-0.82,0-1.55,0.5-1.86,1.26L6,20h2l1.2-3h5.6 l1.2,3h2l-1.5-3.74C16.2,15.5,15.46,15,14.65,15H13v-4.02C18.05,10.81,22,9.31,22,7.5z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col-md-4 cust_blogteaser" id="column-table-5" style="padding-bottom: 20px;margin-bottom: 32px;text-align: center;font-weight: bold;">
+                            <h3 id="heading-table-5" style="text-align: center;margin-top: 20px;font-family: 'Almendra SC', serif;font-size: 60px;margin-right: 0;margin-left: 24px;line-height: 34px;letter-spacing: 0px;font-style: normal;font-weight: bold;color: var(--bs-danger);">MASA 5</h3><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 40px;margin-top: 5px;">
+                                <g>
+                                    <rect fill="none" height="24" width="24"></rect>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M21.96,9.73l-1.43-5C20.41,4.3,20.02,4,19.57,4H4.43C3.98,4,3.59,4.3,3.47,4.73l-1.43,5C1.86,10.36,2.34,11,3,11h2.2L4,20 h2l0.67-5h10.67L18,20h2l-1.2-9H21C21.66,11,22.14,10.36,21.96,9.73z M6.93,13l0.27-2h9.6l0.27,2H6.93z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col-md-4 cust_blogteaser" id="column-table-6" style="padding-bottom: 20px;margin-bottom: 32px;text-align: center;font-weight: bold;">
+                            <h3 id="heading-table-6" style="text-align: center;margin-top: 20px;font-family: 'Almendra SC', serif;font-size: 60px;margin-right: 0;margin-left: 24px;line-height: 34px;letter-spacing: 0px;font-style: normal;font-weight: bold;">MASA 6</h3><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 40px;margin-top: 5px;color: var(--bs-danger);">
+                                <g>
+                                    <rect fill="none" height="24" width="24"></rect>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M22,7.5C22,5.57,17.52,4,12,4S2,5.57,2,7.5c0,1.81,3.95,3.31,9,3.48V15H9.35c-0.82,0-1.55,0.5-1.86,1.26L6,20h2l1.2-3h5.6 l1.2,3h2l-1.5-3.74C16.2,15.5,15.46,15,14.65,15H13v-4.02C18.05,10.81,22,9.31,22,7.5z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col-md-4 cust_blogteaser" id="column-table-7" style="padding-bottom: 20px;margin-bottom: 32px;text-align: center;font-weight: bold;">
+                            <h3 id="heading-table-7" style="text-align: center;margin-top: 20px;font-family: 'Almendra SC', serif;font-size: 60px;margin-right: 0;margin-left: 24px;line-height: 34px;letter-spacing: 0px;font-style: normal;font-weight: bold;color: var(--bs-danger);">MASA 7</h3><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 40px;margin-top: 5px;">
+                                <g>
+                                    <rect fill="none" height="24" width="24"></rect>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M22,7.5C22,5.57,17.52,4,12,4S2,5.57,2,7.5c0,1.81,3.95,3.31,9,3.48V15H9.35c-0.82,0-1.55,0.5-1.86,1.26L6,20h2l1.2-3h5.6 l1.2,3h2l-1.5-3.74C16.2,15.5,15.46,15,14.65,15H13v-4.02C18.05,10.81,22,9.31,22,7.5z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col-md-4 cust_blogteaser" id="column-table-8" style="padding-bottom: 20px;margin-bottom: 32px;text-align: center;font-weight: bold;">
+                            <h3 id="heading-table-8" style="text-align: center;margin-top: 20px;font-family: 'Almendra SC', serif;font-size: 60px;margin-right: 0;margin-left: 24px;line-height: 34px;letter-spacing: 0px;font-style: normal;font-weight: bold;">MASA 8</h3><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 40px;color: var(--bs-danger);margin-top: 5px;">
+                                <g>
+                                    <rect fill="none" height="24" width="24"></rect>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M21.96,9.73l-1.43-5C20.41,4.3,20.02,4,19.57,4H4.43C3.98,4,3.59,4.3,3.47,4.73l-1.43,5C1.86,10.36,2.34,11,3,11h2.2L4,20 h2l0.67-5h10.67L18,20h2l-1.2-9H21C21.66,11,22.14,10.36,21.96,9.73z M6.93,13l0.27-2h9.6l0.27,2H6.93z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col-md-4 cust_blogteaser" id="column-table-9" style="padding-bottom: 20px;margin-bottom: 32px;text-align: center;font-weight: bold;">
+                            <h3 id="heading-table-9" style="text-align: center;margin-top: 20px;font-family: 'Almendra SC', serif;font-size: 60px;margin-right: 0;margin-left: 24px;line-height: 34px;letter-spacing: 0px;font-style: normal;font-weight: bold;color: var(--bs-danger);">MASA 9</h3><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 40px;margin-top: 5px;">
+                                <g>
+                                    <rect fill="none" height="24" width="24"></rect>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M22,7.5C22,5.57,17.52,4,12,4S2,5.57,2,7.5c0,1.81,3.95,3.31,9,3.48V15H9.35c-0.82,0-1.55,0.5-1.86,1.26L6,20h2l1.2-3h5.6 l1.2,3h2l-1.5-3.74C16.2,15.5,15.46,15,14.65,15H13v-4.02C18.05,10.81,22,9.31,22,7.5z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container -lg my-5">
+        <h1 style="text-align: center;font-weight: bold;padding: 19px;">Verifică cum sunt așezate mesele!</h1>
+        <h6 style="text-align: center;padding: 19px;margin-top: -33px;">Alege unde vrei să stai vizualizând diagrama aplasării meselor.</h6>
+    </div>
+    <section>
+        <div class="container">
+            <div class="row fbox3">
+                <div class="col-sm-4 d-flex justify-content-center align-items-center"><a data-fancybox="gallery" data-caption="Interiorul Restaurantului" href="assets/img/Restaurant%20photo%201.jpg"><img class="img-fluid" src="assets/img/Restaurant%20photo%201.jpg" alt="Poza 1 cu interiorul restaurantului ."></a></div>
+                <div class="col-sm-4 d-flex justify-content-center align-items-center"><a data-fancybox="gallery" data-caption="Interiorul Restaurantului" href="assets/img/Table%20location%20diagram%20picture.png"><img class="img-fluid" src="assets/img/Table%20location%20diagram%20picture.png" alt="Poza 2 cu diagrama amplasarii meselor."></a></div>
+                <div class="col-sm-4 d-flex justify-content-center align-items-center"><a data-fancybox="gallery" data-caption="Interiorul Restaurantului" href="assets/img/Restaurant%20photo%204.jpg"><img class="img-fluid" src="assets/img/Restaurant%20photo%204.jpg" alt="Poza 3 cu interiorul restaurantului ."></a></div>
+            </div>
+        </div>
+        <div class="container -lg my-5" style="text-align: center;"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="open-booking-button-modal" type="button" style="margin: 3px;font-weight: bold;background: var(--bs-danger);border-width: 0.8px;border-color: var(--bs-emphasis-color);font-size: 27px;" data-bs-target="#modal-booking" data-bs-toggle="modal">Rezervă acum!&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="font-size: 23px;">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.67187 1.91147C6.52893 1.37801 5.9806 1.06142 5.44713 1.20437C4.91366 1.34731 4.59708 1.89565 4.74002 2.42911L4.99884 3.39504C5.14178 3.9285 5.69012 4.24509 6.22359 4.10214C6.75705 3.9592 7.07363 3.41086 6.93069 2.8774L6.67187 1.91147ZM2.42923 4.7399C1.89577 4.59696 1.34743 4.91354 1.20449 5.44701C1.06155 5.98047 1.37813 6.52881 1.9116 6.67175L2.87752 6.93057C3.41099 7.07351 3.95932 6.75693 4.10227 6.22346C4.24521 5.69 3.92863 5.14166 3.39516 4.99872L2.42923 4.7399ZM11.2427 4.17149C11.6332 3.78097 11.6332 3.1478 11.2427 2.75728C10.8522 2.36676 10.219 2.36676 9.82847 2.75728L9.12136 3.46439C8.73084 3.85491 8.73084 4.48808 9.12136 4.8786C9.51189 5.26912 10.1451 5.26912 10.5356 4.8786L11.2427 4.17149ZM4.17162 11.2426L4.87872 10.5355C5.26925 10.1449 5.26925 9.51177 4.87872 9.12124C4.4882 8.73072 3.85503 8.73072 3.46451 9.12124L2.7574 9.82835C2.36688 10.2189 2.36688 10.852 2.7574 11.2426C3.14793 11.6331 3.78109 11.6331 4.17162 11.2426ZM7.37154 6.07152C7.00012 5.92295 6.5759 6.01002 6.29304 6.29289C6.01018 6.57575 5.92311 6.99997 6.07167 7.37138L10.0717 17.3714C10.2179 17.737 10.5651 17.9828 10.9586 17.9991C11.352 18.0155 11.7185 17.7994 11.8946 17.4472L13.2741 14.6882L16.293 17.7071C16.6836 18.0976 17.3167 18.0976 17.7073 17.7071C18.0978 17.3166 18.0978 16.6834 17.7073 16.2929L14.6883 13.2739L17.4474 11.8944C17.7996 11.7183 18.0157 11.3519 17.9993 10.9584C17.9829 10.565 17.7372 10.2178 17.3715 10.0715L7.37154 6.07152Z" fill="currentColor"></path>
+                </svg></button>
+            <div class="modal fade" role="dialog" tabindex="-1" id="modal-booking">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="text-align: center;">
+                            <h4 class="modal-title" style="color: var(--bs-emphasis-color);width: 529.038px;text-align: center;font-weight: bold;font-size: 29.704px;">Rezervare</h4>
+                        </div>
+                        <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;">Introduceţi Numele&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="font-size: 22px;">
+
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM11 7C11 6.44772 10.5523 6 10 6C9.44771 6 9 6.44772 9 7L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L9.29289 13.7071C9.68342 14.0976 10.3166 14.0976 10.7071 13.7071L13.7071 10.7071C14.0976 10.3166 14.0976 9.68342 13.7071 9.29289C13.3166 8.90237 12.6834 8.90237 12.2929 9.29289L11 10.5858V7Z" fill="currentColor"></path>
+                            </svg></p><textarea id="textarea-name-client-booking" style="text-align: center;margin-right: 75px;margin-left: 75px;border-radius: 5px;margin-bottom: 15px;height: 29.6px;" placeholder="Introdu aici numele!"></textarea>
+                        <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;margin-top: -3px;">Introduceţi Numărul de Telefon&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="font-size: 22px;">
+
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM11 7C11 6.44772 10.5523 6 10 6C9.44771 6 9 6.44772 9 7L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L9.29289 13.7071C9.68342 14.0976 10.3166 14.0976 10.7071 13.7071L13.7071 10.7071C14.0976 10.3166 14.0976 9.68342 13.7071 9.29289C13.3166 8.90237 12.6834 8.90237 12.2929 9.29289L11 10.5858V7Z" fill="currentColor"></path>
+                            </svg></p><input type="number" id="number-input-phone-booking" style="margin-right: 95px;margin-left: 95px;border-radius: 5px;text-align: center;margin-bottom: 14px;border-width: 0.6px;" placeholder="Introdu aici numărul de telefon!">
+                        <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;">Introduceţi Data&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="font-size: 22px;">
+
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM11 7C11 6.44772 10.5523 6 10 6C9.44771 6 9 6.44772 9 7L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L9.29289 13.7071C9.68342 14.0976 10.3166 14.0976 10.7071 13.7071L13.7071 10.7071C14.0976 10.3166 14.0976 9.68342 13.7071 9.29289C13.3166 8.90237 12.6834 8.90237 12.2929 9.29289L11 10.5858V7Z" fill="currentColor"></path>
+                            </svg></p><input id="data-input-booking" type="date" style="margin-right: 95px;margin-left: 95px;text-align: center;">
+                        <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;margin-top: 17px;">Introduceţi Numărul Mesei&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="font-size: 22px;">
+
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM11 7C11 6.44772 10.5523 6 10 6C9.44771 6 9 6.44772 9 7L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L9.29289 13.7071C9.68342 14.0976 10.3166 14.0976 10.7071 13.7071L13.7071 10.7071C14.0976 10.3166 14.0976 9.68342 13.7071 9.29289C13.3166 8.90237 12.6834 8.90237 12.2929 9.29289L11 10.5858V7Z" fill="currentColor"></path>
+                            </svg></p><input type="number" id="number-input-table-booking" style="margin-right: 95px;margin-left: 95px;border-radius: 5px;text-align: center;margin-bottom: 14px;border-width: 0.6px;" placeholder="Introdu aici numărul mesei!">
+                        <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;margin-top: 2px;">Observații&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="font-size: 22px;">
+
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM11 7C11 6.44772 10.5523 6 10 6C9.44771 6 9 6.44772 9 7L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L9.29289 13.7071C9.68342 14.0976 10.3166 14.0976 10.7071 13.7071L13.7071 10.7071C14.0976 10.3166 14.0976 9.68342 13.7071 9.29289C13.3166 8.90237 12.6834 8.90237 12.2929 9.29289L11 10.5858V7Z" fill="currentColor"></path>
+                            </svg></p><textarea id="textarea-booking-remarks" style="text-align: center;margin-right: 25px;margin-left: 25px;border-radius: 5px;" placeholder="Introdu aici observații daca este cazul!"></textarea>
+                        <div class="modal-footer"><button class="btn btn-light" data-bss-hover-animate="pulse" type="button" data-bs-dismiss="modal" style="color: var(--bs-btn-disabled-color);font-weight: bold;background: var(--bs-danger);">Anulează</button><button class="btn btn-primary" data-bss-hover-animate="pulse" id="add-booking" type="button" style="background: var(--bs-teal);color: var(--bs-emphasis-color);font-weight: bold;border-width: 0.8px;border-color: var(--bs-teal);">Rezervă</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="#" style="font-family: ABeeZee, sans-serif;font-size: 29px;color: var(--bs-form-invalid-border-color);">ECHIMBURI&nbsp;<span style="font-size: 22px;color: var(--bs-form-invalid-color);"><br>RESTAURANT</span></a></h3>
+                <p class="company-name" style="font-size: 19px;">ECHIMBURI&nbsp;© 2023</p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon" style="color: var(--bs-form-invalid-color);"> </span>
+                    <p style="color: var(--bs-form-invalid-border-color);"><span class="new-line-span">Strada: Revolutionarilor&nbsp; Nr:2</span> Craiova, Romania</p>
+                </div>
+                <div style="color: var(--bs-form-invalid-border-color);"><i class="fa fa-phone footer-contacts-icon" style="color: var(--bs-form-invalid-color);"></i>
+                    <p class="footer-center-info email text-start" style="color: var(--bs-form-invalid-border-color);"> +40 72 92 34 036</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon" style="color: var(--bs-form-invalid-color);"></i>
+                    <p> <a href="#" target="_blank" style="color: var(--bs-form-invalid-border-color);">echimburi@restaurant.com</a></p>
+                </div>
+            </div>
+            <div class="col-md-4 footer-about">
+                <div class="social-links social-icons"><a href="#" style="color: var(--bs-form-invalid-border-color);margin: 16px;"><i class="fa fa-facebook"></i></a><a href="#" style="margin: 16px;"><i class="fa fa-twitter" style="color: var(--bs-form-invalid-border-color);"></i></a><a href="#" style="margin: 16px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram" style="color: var(--bs-form-invalid-border-color);">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                        </svg></a></div>
+                <p style="margin: 20px;">PROGRAM&nbsp; &nbsp; L - V : 9:30&nbsp; -&nbsp; 23:30<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; S - D : 10:00 - 2:00</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <script src="assets/js/reservation/createReservation.js"></script>
+    <script src="assets/js/reservation/checkTableAvailability.js"></script>
+    <script src="assets/js/displayFunctionalities/dsplayReservationPageFunctionalities.js"></script>
+</body>
+
+</html>

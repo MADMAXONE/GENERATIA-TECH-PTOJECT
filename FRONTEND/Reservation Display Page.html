@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>RESTAURANT WEB APP</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almendra+SC&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barrio&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/Basic-fancyBox-Gallery-v2.css">
+    <link rel="stylesheet" href="assets/css/cards-d_style.css">
+    <link rel="stylesheet" href="assets/css/Competences-Grid---3-Columns---Hover-Effect-Pop---Icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Centered-Links-icons.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
+    <link rel="stylesheet" href="assets/css/News-Cards.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer-.css">
+    <link rel="stylesheet" href="assets/css/ReviewCard.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body py-3">
+        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: rgb(0,0,0);"><i class="material-icons" style="font-size: 25px;">local_dining</i></span><span style="font-size: 24px;"><strong>ECHIMBURI RESTAURANT</strong></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" id="home-button"><a class="nav-link active" data-bss-hover-animate="pulse" id="home-window" href="Welcome%20Page.html" style="font-size: 20px;"><strong>Acasă</strong></a></li>
+                    <li class="nav-item"><a class="nav-link active d-none" data-bss-hover-animate="pulse" id="connect-window-2" href="Reservation%20Display%20Page.html" style="font-size: 20px;"><strong>Rezervări</strong></a></li>
+                    <li class="nav-item"><a class="nav-link active d-none" data-bss-hover-animate="pulse" id="connect-window-1" href="Orders%20Display%20Page.html" style="font-size: 20px;"><strong>Comenzi</strong></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" id="menu-window" href="Menu%20Page.html" style="color: var(--bs-navbar-active-color);font-size: 20px;"><strong>Meniu</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" id="reservation-window" href="Reservation%20Page.html" style="font-weight: bold;color: var(--bs-navbar-active-color);font-size: 20px;">Rezervare</a></li>
+                </ul><a class="btn btn-primary ms-md-2" role="button" data-bss-hover-animate="pulse" id="cart-window" href="Cart%20Page.html" style="background: var(--bs-navbar-brand-color);border-color: var(--bs-black);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="font-size: 30px;">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z" fill="currentColor"></path>
+                        <path d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z" fill="currentColor"></path>
+                        <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="currentColor"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container -lg my-5" style="text-align: center;"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="delete-individual-reservation-button-path" type="button" style="margin: 3px;font-weight: bold;background: var(--bs-danger);border-width: 0.8px;border-color: var(--bs-emphasis-color);font-size: 20px;" data-bs-target="#modal-delete-individual-reservation" data-bs-toggle="modal">Ștergere Rezervare Individual</button>
+            <div class="modal fade" role="dialog" tabindex="-1" id="modal-delete-individual-reservation">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="text-align: center;">
+                            <h4 class="modal-title" style="color: var(--bs-emphasis-color);width: 529.038px;text-align: center;font-weight: bold;font-size: 29.704px;">Ștergere Rezervare</h4>
+                        </div>
+                        <div class="modal-body" style="height: 141px;margin-bottom: 0px;">
+                            <p style="color: var(--bs-danger);font-size: 23px;font-weight: bold;text-align: center;">Dorești ca o rezervare să fie ștersă?</p><input type="number" id="number-input-id-database-review-delete" style="margin-right: 95px;margin-left: 95px;border-radius: 5px;text-align: center;margin-bottom: 0px;border-width: 0.6px;" placeholder="Introdu aici numarul!">
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-light" data-bss-hover-animate="pulse" type="button" data-bs-dismiss="modal" style="color: var(--bs-btn-disabled-color);font-weight: bold;background: var(--bs-teal);border-color: var(--bs-teal);">Anulează</button><button class="btn btn-primary" data-bss-hover-animate="pulse" id="delete-reservation-button" type="button" style="background: var(--bs-danger);color: var(--bs-emphasis-color);font-weight: bold;border-color: var(--bs-danger);">Confirmă</button></div>
+                    </div>
+                </div>
+            </div><button class="btn btn-primary" data-bss-hover-animate="pulse" id="delete-all-reservation-button-path" type="button" style="margin: 3px;font-weight: bold;background: var(--bs-danger);border-width: 0.8px;border-color: var(--bs-emphasis-color);font-size: 20px;" data-bs-target="#modal-delete-all-reservations" data-bs-toggle="modal">Ștergerea Tuturor Rezervărilor</button>
+            <div class="modal fade" role="dialog" tabindex="-1" id="modal-delete-all-reservations">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="text-align: center;">
+                            <h4 class="modal-title" style="color: var(--bs-emphasis-color);width: 529.038px;text-align: center;font-weight: bold;font-size: 29.704px;">Ștergere Listă Rezervări</h4>
+                        </div>
+                        <div class="modal-body" style="height: 173px;margin-bottom: 0px;">
+                            <p style="color: var(--bs-danger);font-size: 23px;font-weight: bold;text-align: center;">Dorești ca toată lista de rezervări dintr-o anumită zi să fie ștearsă?</p><input id="date-input-delete-reservations" type="date">
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-light" data-bss-hover-animate="pulse" type="button" data-bs-dismiss="modal" style="color: var(--bs-btn-disabled-color);font-weight: bold;background: var(--bs-teal);border-color: var(--bs-teal);">Anulează</button><button class="btn btn-primary" data-bss-hover-animate="pulse" id="delete-reservations-button" type="button" style="background: var(--bs-danger);color: var(--bs-emphasis-color);font-weight: bold;border-color: var(--bs-danger);">Confirmă</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container" style="width: auto;height: auto;">
+            <div>
+                <div class="container">
+                    <div class="cust_bloglistintro">
+                        <p style="margin-left:34px;color:rgba(255,255,255,0.5);font-size:14px;"></p>
+                    </div>
+                    <div class="row" id="Reservations"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="#" style="font-family: ABeeZee, sans-serif;font-size: 29px;color: var(--bs-form-invalid-border-color);">ECHIMBURI&nbsp;<span style="font-size: 22px;color: var(--bs-form-invalid-color);"><br>RESTAURANT</span></a></h3>
+                <p class="company-name" style="font-size: 19px;">ECHIMBURI&nbsp;© 2023</p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon" style="color: var(--bs-form-invalid-color);"> </span>
+                    <p style="color: var(--bs-form-invalid-border-color);"><span class="new-line-span">Strada: Revolutionarilor&nbsp; Nr:2</span> Craiova, Romania</p>
+                </div>
+                <div style="color: var(--bs-form-invalid-border-color);"><i class="fa fa-phone footer-contacts-icon" style="color: var(--bs-form-invalid-color);"></i>
+                    <p class="footer-center-info email text-start" style="color: var(--bs-form-invalid-border-color);"> +40 72 92 34 036</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon" style="color: var(--bs-form-invalid-color);"></i>
+                    <p> <a href="#" target="_blank" style="color: var(--bs-form-invalid-border-color);">echimburi@restaurant.com</a></p>
+                </div>
+            </div>
+            <div class="col-md-4 footer-about">
+                <div class="social-links social-icons"><a href="#" style="color: var(--bs-form-invalid-border-color);margin: 16px;"><i class="fa fa-facebook"></i></a><a href="#" style="margin: 16px;"><i class="fa fa-twitter" style="color: var(--bs-form-invalid-border-color);"></i></a><a href="#" style="margin: 16px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram" style="color: var(--bs-form-invalid-border-color);">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                        </svg></a></div>
+                <p style="margin: 20px;">PROGRAM&nbsp; &nbsp; L - V : 9:30&nbsp; -&nbsp; 23:30<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; S - D : 10:00 - 2:00</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <script src="assets/js/reservation/sendReservation.js"></script>
+    <script src="assets/js/reservation/deleteAllReservations.js"></script>
+    <script src="assets/js/reservation/singleDeleteReservation.js"></script>
+    <script src="assets/js/displayFunctionalities/displayReservationDisplayPageFunctionalities.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>RESTAURANT WEB APP</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almendra+SC&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barrio&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/Basic-fancyBox-Gallery-v2.css">
+    <link rel="stylesheet" href="assets/css/cards-d_style.css">
+    <link rel="stylesheet" href="assets/css/Competences-Grid---3-Columns---Hover-Effect-Pop---Icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Centered-Links-icons.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
+    <link rel="stylesheet" href="assets/css/News-Cards.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer-.css">
+    <link rel="stylesheet" href="assets/css/ReviewCard.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body py-3">
+        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: rgb(0,0,0);"><i class="material-icons" style="font-size: 25px;">local_dining</i></span><span style="font-size: 24px;"><strong>ECHIMBURI RESTAURANT</strong></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" id="home-button"><a class="nav-link active" data-bss-hover-animate="pulse" id="home-window" href="Welcome%20Page.html" style="font-size: 20px;"><strong>Acasă</strong></a></li>
+                    <li class="nav-item"><a class="nav-link active d-none" data-bss-hover-animate="pulse" id="connect-window-2" href="Reservation%20Display%20Page.html" style="font-size: 20px;"><strong>Rezervări</strong></a></li>
+                    <li class="nav-item"><a class="nav-link active d-none" data-bss-hover-animate="pulse" id="connect-window-1" href="Orders%20Display%20Page.html" style="font-size: 20px;"><strong>Comenzi</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" id="menu-window" href="Menu%20Page.html" style="color: var(--bs-navbar-active-color);font-size: 20px;"><strong>Meniu</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" id="reservation-window" href="Reservation%20Page.html" style="font-weight: bold;color: var(--bs-navbar-active-color);font-size: 20px;">Rezervare</a></li>
+                </ul><a class="btn btn-primary ms-md-2" role="button" data-bss-hover-animate="pulse" id="cart-window" href="Cart%20Page.html" style="background: var(--bs-navbar-brand-color);border-color: var(--bs-black);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="font-size: 30px;">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z" fill="currentColor"></path>
+                        <path d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z" fill="currentColor"></path>
+                        <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="currentColor"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </nav>
+    <section id="bgPhoto1" style="text-align: center;"></section>
+    <section style="height: 800.225px;">
+        <div class="container text-center" style="padding: 38px;margin-bottom: -34px;">
+            <h2 style="text-align: center;padding: 17px;">Ce Spun Clienții Noștri</h2><button class="btn btn-primary" data-bss-hover-animate="pulse" id="button-review-path" type="button" style="background: var(--bs-danger);border-color: rgb(0,0,0);padding: 8px 20px;margin: -2px;" data-toggle="modal" data-target="#modal-review-box" data-bs-target="#add-review-modal" data-bs-toggle="modal"><strong>Adăuga O Recenzie!&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="font-size: 23px;">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="currentColor"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 7C13 6.44772 12.5523 6 12 6C11.4477 6 11 6.44772 11 7V11H7C6.44772 11 6 11.4477 6 12C6 12.5523 6.44772 13 7 13H11V17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17V13H17C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11H13V7Z" fill="currentColor"></path>
+                </svg></button>
+            <div class="modal fade" role="dialog" tabindex="-1" id="add-review-modal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="text-align: center;">
+                            <h4 class="modal-title" style="color: var(--bs-emphasis-color);width: 529.038px;text-align: center;">Împărtășește-ți experiența!<br>Opinia ta contează!</h4>
+                        </div>
+                        <div class="modal-body" style="height: 136px;">
+                            <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;">Acordă-ne o notă!</p>
+                            <div class="d-flex flex-row" id="wrapper" style="width: 279px;height: 46px;background: var(--bs-body-bg);">
+                                <div class="d-flex" id="add-theWholeWrapper" style="margin-top: 10px;">
+                                    <div id="one"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="add-reviewBtn-1" type="button" style="border-radius: 43px;border-width: 0.8px;"><i class="fa fa-star" style="color: var(--bs-warning);font-size: 24px;"></i></button></div>
+                                    <div id="add-two-1"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="add-reviewBtn-2" type="button" style="border-radius: 43px;border-width: 0.8px;"><i class="fa fa-star" style="color: var(--bs-warning);font-size: 24px;"></i></button></div>
+                                    <div id="add-two-2"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="add-reviewBtn-3" type="button" style="border-radius: 43px;border-width: 0.8px;"><i class="fa fa-star" style="color: var(--bs-warning);font-size: 24px;"></i></button></div>
+                                    <div id="add-two-3"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="add-reviewBtn-4" type="button" style="border-radius: 43px;border-width: 0.8px;"><i class="fa fa-star" style="color: var(--bs-warning);font-size: 24px;"></i></button></div>
+                                    <div id="add-two-4"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="add-reviewBtn-5" type="button" style="border-radius: 43px;border-width: 0.8px;"><i class="fa fa-star" style="color: var(--bs-warning);font-size: 24px;"></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;margin-top: -24px;">&nbsp;Introduceţi numele!</p><textarea id="add-review-person-name-input" style="height: 33px;color: var(--bs-emphasis-color);font-size: 17px;border-radius: 5px;margin-right: 20px;margin-left: 20px;text-align: center;" placeholder=" Introduceţi aici numele !"></textarea>
+                        <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;margin-top: 14px;">Exprimați-vă părerea!</p><textarea id="add-review-description-input" style="height: 120px;color: var(--bs-emphasis-color);font-size: 17px;border-radius: 5px;margin-right: 20px;margin-left: 20px;text-align: center;" placeholder=" Introdu aici ce ai de spus!"></textarea>
+                        <div class="modal-footer"><button class="btn btn-light" data-bss-hover-animate="pulse" type="button" data-bs-dismiss="modal" style="color: var(--bs-btn-disabled-color);font-weight: bold;background: var(--bs-danger);">Anulează</button><button class="btn btn-primary" data-bss-hover-animate="pulse" id="add-button-review" type="button" style="background: var(--bs-green);color: var(--bs-emphasis-color);font-weight: bold;">Adăuga</button></div>
+                    </div>
+                </div>
+            </div>
+            <div id="admin-controls-review-buttons" class="d-none" style="margin-top: 20px;text-align: center;"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="edit-review-button-path" type="button" style="margin: 3px;font-weight: bold;background: var(--bs-btn-border-color);border-width: 0.8px;border-color: var(--bs-emphasis-color);font-size: 20px;" data-bs-target="#edit-review-modal" data-bs-toggle="modal">Editare</button>
+                <div class="modal fade" role="dialog" tabindex="-1" id="edit-review-modal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="text-align: center;">
+                                <h4 class="modal-title" style="color: var(--bs-emphasis-color);width: 529.038px;text-align: center;">Editare Recenzie</h4>
+                            </div>
+                            <div class="modal-body" style="height: 136px;">
+                                <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;">Editare Notă</p>
+                                <div class="d-flex flex-row" id="wrapper" style="width: 279px;height: 46px;background: var(--bs-body-bg);">
+                                    <div class="d-flex" id="theWholeWrapper" style="margin-top: 10px;">
+                                        <div id="one"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="edit-reviewBtn-1" type="button" style="border-radius: 43px;border-width: 0.8px;"><i class="fa fa-star" style="color: var(--bs-warning);font-size: 24px;"></i></button></div>
+                                        <div id="two-1"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="edit-reviewBtn-2" type="button" style="border-radius: 43px;border-width: 0.8px;"><i class="fa fa-star" style="color: var(--bs-warning);font-size: 24px;"></i></button></div>
+                                        <div id="two-2"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="edit-reviewBtn-3" type="button" style="border-radius: 43px;border-width: 0.8px;"><i class="fa fa-star" style="color: var(--bs-warning);font-size: 24px;"></i></button></div>
+                                        <div id="two-3"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="edit-reviewBtn-4" type="button" style="border-radius: 43px;border-width: 0.8px;"><i class="fa fa-star" style="color: var(--bs-warning);font-size: 24px;"></i></button></div>
+                                        <div id="two-4"><button class="btn btn-primary" data-bss-hover-animate="pulse" id="edit-reviewBtn-5" type="button" style="border-radius: 43px;border-width: 0.8px;"><i class="fa fa-star" style="color: var(--bs-warning);font-size: 24px;"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;margin-top: -24px;">&nbsp;Introduceţi ID-ul Recenziei</p><input type="number" id="number-input-id-database-edit" style="margin-right: 95px;margin-left: 95px;border-radius: 5px;text-align: center;margin-bottom: 14px;border-width: 0.6px;" placeholder="Introdu aici id-ul !">
+                            <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;margin-top: 13px;">&nbsp;Editaţi numele!</p><textarea id="edit-review-person-name-input" style="height: 33px;color: var(--bs-emphasis-color);font-size: 17px;border-radius: 5px;margin-right: 20px;margin-left: 20px;text-align: center;" placeholder=" Introduceţi aici numele dumneavoastră !"></textarea>
+                            <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;margin-top: 14px;">Editați descrierea!</p><textarea id="edit-review-description-input" style="height: 120px;color: var(--bs-emphasis-color);font-size: 17px;border-radius: 5px;margin-right: 20px;margin-left: 20px;text-align: center;" placeholder=" Introdu aici ce ai de spus!"></textarea>
+                            <div class="modal-footer"><button class="btn btn-light" data-bss-hover-animate="pulse" type="button" data-bs-dismiss="modal" style="color: var(--bs-btn-disabled-color);font-weight: bold;background: var(--bs-danger);">Anulează</button><button class="btn btn-primary" data-bss-hover-animate="pulse" id="edit-button-review" type="button" style="background: var(--bs-teal);color: var(--bs-emphasis-color);font-weight: bold;border-color: var(--bs-teal);">Editează</button></div>
+                        </div>
+                    </div>
+                </div><button class="btn btn-primary" data-bss-hover-animate="pulse" id="delete-review-button-path" type="button" style="margin: 3px;font-weight: bold;background: var(--bs-danger);border-width: 0.8px;border-color: var(--bs-emphasis-color);font-size: 20px;" data-bs-target="#modal-delete-review" data-bs-toggle="modal">Ștergere</button>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modal-delete-review">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="text-align: center;">
+                                <h4 class="modal-title" style="color: var(--bs-emphasis-color);width: 529.038px;text-align: center;font-weight: bold;font-size: 29.704px;">Ștergere Recenzie</h4>
+                            </div>
+                            <div class="modal-body" style="height: 123px;margin-bottom: 0px;">
+                                <p style="color: var(--bs-danger);font-size: 23px;font-weight: bold;text-align: center;">Dorești ca o recenzie să fie ștersă?</p><input type="number" id="number-input-id-database-review-delete" style="margin: 0px;margin-right: 95px;margin-left: 95px;border-radius: 5px;text-align: center;margin-bottom: 0px;border-width: 0.6px;" placeholder="Introdu aici id-ul !">
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-light" data-bss-hover-animate="pulse" type="button" data-bs-dismiss="modal" style="color: var(--bs-btn-disabled-color);font-weight: bold;background: var(--bs-teal);border-color: var(--bs-teal);">Anulează</button><button class="btn btn-primary" data-bss-hover-animate="pulse" id="delete-review-button" type="button" style="background: var(--bs-danger);color: var(--bs-emphasis-color);font-weight: bold;border-color: var(--bs-danger);">Confirmă</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-login">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="text-align: center;">
+                        <h4 class="modal-title" style="color: var(--bs-emphasis-color);width: 529.038px;text-align: center;font-weight: bold;font-size: 29.704px;">Conectare</h4>
+                    </div>
+                    <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;">Introduceţi Numele de Utilizator<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="font-size: 22px;">
+
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM11 7C11 6.44772 10.5523 6 10 6C9.44771 6 9 6.44772 9 7L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L9.29289 13.7071C9.68342 14.0976 10.3166 14.0976 10.7071 13.7071L13.7071 10.7071C14.0976 10.3166 14.0976 9.68342 13.7071 9.29289C13.3166 8.90237 12.6834 8.90237 12.2929 9.29289L11 10.5858V7Z" fill="currentColor"></path>
+                        </svg></p><textarea id="textarea-username" style="text-align: center;margin-right: 75px;margin-left: 75px;border-radius: 5px;margin-bottom: 15px;height: 29.6px;border-width: 1px;" placeholder="Introdu aici numele de utilizator!"></textarea>
+                    <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;margin-top: -3px;">Introduceţi Parola&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="font-size: 22px;">
+
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM11 7C11 6.44772 10.5523 6 10 6C9.44771 6 9 6.44772 9 7L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L9.29289 13.7071C9.68342 14.0976 10.3166 14.0976 10.7071 13.7071L13.7071 10.7071C14.0976 10.3166 14.0976 9.68342 13.7071 9.29289C13.3166 8.90237 12.6834 8.90237 12.2929 9.29289L11 10.5858V7Z" fill="currentColor"></path>
+                        </svg></p><input type="password" id="password-input" style="margin-right: 75px;margin-bottom: 15px;margin-left: 75px;border-radius: 5px;border-width: 1px;text-align: center;" placeholder="Introdu aici parola!">
+                    <p style="color: var(--bs-emphasis-color);font-size: 18px;font-weight: bold;text-align: center;margin-top: 2px;">Selectați Rolul&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="font-size: 22px;">
+
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM11 7C11 6.44772 10.5523 6 10 6C9.44771 6 9 6.44772 9 7L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L9.29289 13.7071C9.68342 14.0976 10.3166 14.0976 10.7071 13.7071L13.7071 10.7071C14.0976 10.3166 14.0976 9.68342 13.7071 9.29289C13.3166 8.90237 12.6834 8.90237 12.2929 9.29289L11 10.5858V7Z" fill="currentColor"></path>
+                        </svg></p>
+                    <div class="dropdown" style="margin-bottom: 22px;text-align: center;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" data-bss-hover-animate="pulse" type="button" style="font-weight: bold;color: var(--bs-emphasis-color);width: 99.1094px;">Roluri</button>
+                        <div class="dropdown-menu"><a class="dropdown-item" id="cook-role" href="#" style="font-weight: bold;border-width: 1px;">BUCĂTAR</a><a class="dropdown-item" id="waiter-role" href="#" style="font-weight: bold;border-width: 1px;">OSPĂTAR</a><a class="dropdown-item" id="administrator-role" href="#" style="font-weight: bold;border-width: 1px;">ADMINISTRATOR</a></div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" data-bss-hover-animate="pulse" type="button" data-bs-dismiss="modal" style="color: var(--bs-btn-disabled-color);font-weight: bold;background: var(--bs-danger);">Anulează</button><button class="btn btn-primary" data-bss-hover-animate="pulse" id="login-button" type="button" style="background: var(--bs-teal);color: var(--bs-emphasis-color);font-weight: bold;border-width: 0.8px;border-color: var(--bs-teal);margin-left: 69px;">Conectare</button><button class="btn btn-primary" data-bss-hover-animate="pulse" id="logout-button" type="button" style="background: var(--bs-orange);color: var(--bs-emphasis-color);font-weight: bold;border-width: 0.8px;border-color: var(--bs-teal);margin-left: 58px;">Deconectare</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="review-container" style="text-align: center;height: 600.5px;" data-bs-smooth-scroll="true">
+            <div class="card" style="margin: 40px;background: var(--bs-emphasis-color);"></div>
+        </div>
+    </section>
+    <section style="margin: 66px;">
+        <div class="container" id="decription-container-1" style="margin-top: 132px;">
+            <h1 style="text-align: center;font-weight: bold;">Bine ai venit la Echimburi!</h1>
+            <h3 class="text-center" style="margin: -27px;font-weight: bold;margin-top: -15px;"><br><span style="color: rgb(249, 249, 249); background-color: rgb(23, 23, 23);">Cine suntem noi?</span><br><br></h3>
+            <p style="text-align: center;padding: 14px;font-size: 22px;width: auto;height: auto;margin: auto;">Suntem un restaurant fondat în 2023, cu un concept revoluționar&nbsp;și o echipă de profesioniști desăvârșiți în arta gastronomiei. Fiecare membru al personalului nostru este pasionat de creația culinară și are o vastă experiență în domeniu. Meniul nostru diversificat este o călătorie culinară care te va purta în colțuri îndepărtate ale lumii doar prin gustul lor. De la preparatele italiene autentice, la deliciile asiatice și până la specialități exotice din America de Sud, avem ceva pentru toți iubitorii de bunătăți culinare. Cu serviciul nostru de livrare la domiciliu, poți savura aceste arome excepționale chiar în confortul propriei locuințe. Situați într-o locație superbă, cu o atmosferă primitoare și plăcută, Echimburi restaurant este locul ideal pentru a experimenta o experiență gastronomică de neuitat. Te invităm să ne treci pragul și să te bucuri de o călătorie culinară memorabilă alături de noi!<br><br></p>
+        </div>
+        <div class="container -lg my-5" id="decription-choice-container-1">
+            <h1 style="text-align: center;font-weight: bold;padding: 19px;">De ce să ne alegi pe noi?</h1>
+        </div>
+    </section>
+    <div style="text-align: center;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 competencesboxes"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-crown" style="font-size: 46px;color: gold;">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z"></path>
+                    </svg>
+                    <h1 class="competencestitles"><strong>GUST</strong>&nbsp;GROZAV</h1>
+                    <p class="competencesparagraph" style="font-size: 16px;">Fiecare preparat de la Echimburi Restaurant este gândit pentru a-ți oferi o explozie de arome și gusturi autentice. Indiferent dacă preferi mâncarea condimentată sau preparatele delicate, vei găsi întotdeauna ceva care să îți satisfacă pofta de gusturi rafinate.</p><i class="far fa-square squareicons" style="margin-top: 80px;"></i>
+                </div>
+                <div class="col-md-4 competencesboxes"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-health-recognition" style="font-size: 46px;color: red;">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
+                        <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
+                        <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
+                        <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
+                        <path d="M8.603 9.61a2.04 2.04 0 0 1 2.912 0l.485 .39l.5 -.396a2.035 2.035 0 0 1 2.897 .007a2.104 2.104 0 0 1 0 2.949l-3.397 3.44l-3.397 -3.44a2.104 2.104 0 0 1 0 -2.95z"></path>
+                    </svg>
+                    <h1 class="competencestitles"><strong>Mâncare Preparată cu Alimente Bio</strong></h1>
+                    <p class="competencesparagraph" style="font-size: 16px;">Ne preocupăm nu doar de calitatea gustului, ci și de calitatea ingredientelor pe care le folosim. La Echimburi Restaurant, preparatele noastre sunt pregătite cu ingrediente proaspete și naturale, provenite de la producători locali și certificate bio, pentru a-ți oferi o experiență culinară sănătoasă și echilibrată.</p><i class="far fa-square squareicons"></i>
+                </div>
+                <div class="col-md-4 competencesboxes"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-speedtest" style="font-size: 46px;color: greenyellow;">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M5.636 19.364a9 9 0 1 1 12.728 0"></path>
+                        <path d="M16 9l-4 4"></path>
+                    </svg>
+                    <h1 class="competencestitles"><strong>Livrare în Mai Puțin de 60 de Minute</strong></h1>
+                    <p class="competencesparagraph" style="font-size: 16px;">Vrem să te bucuri de mâncarea noastră cât mai repede posibil, de aceea garantăm o livrare rapidă și eficientă, în mai puțin de 60 de minute de la finalizarea comenzii tale. Indiferent de momentul zilei, noi suntem aici să îți aducem aromele noastre delicioase la ușa ta, pentru a-ți face ziua mai plină de savoare și confort.</p><i class="far fa-square squareicons"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <h1 style="text-align: center;padding: 13px;margin: 53px;">Galerie</h1>
+        <div class="container">
+            <div class="row fbox3">
+                <div class="col-sm-4 d-flex justify-content-center align-items-center"><a data-fancybox="gallery" data-caption="Interiorul Restaurantului" href="assets/img/Restaurant%20photo%201.jpg"><img class="img-fluid" src="assets/img/Restaurant%20photo%201.jpg" alt="Poza 1 cu interiorul restaurantului ."></a></div>
+                <div class="col-sm-4 d-flex justify-content-center align-items-center"><a data-fancybox="gallery" data-caption="Interiorul Restaurantului" href="assets/img/Restaurant%20photo%202.jpg"><img class="img-fluid" src="assets/img/Restaurant%20photo%202.jpg" alt="Poza 2 cu interiorul restaurantului ."></a></div>
+                <div class="col-sm-4 d-flex justify-content-center align-items-center"><a data-fancybox="gallery" data-caption="Interiorul Restaurantului" href="assets/img/Restaurant%20photo%203.jpg"><img class="img-fluid" src="assets/img/Restaurant%20photo%203.jpg" alt="Poza 3 cu interiorul restaurantului ."></a></div>
+                <div class="col-sm-4 d-flex justify-content-center align-items-center"><a data-fancybox="gallery" data-caption="Interiorul Restaurantului" href="assets/img/Restaurant%20photo%204.jpg"><img class="img-fluid" src="assets/img/Restaurant%20photo%204.jpg" alt="Poza 4 cu interiorul restaurantului ."></a></div>
+                <div class="col-sm-4 d-flex justify-content-center align-items-center"><a data-fancybox="gallery" data-caption="Poza Chelner" href="assets/img/Waiter%20photo%201%20.jpg"><img class="img-fluid" src="assets/img/Waiter%20photo%201%20.jpg" alt="Poza cu chelnerul."></a></div>
+                <div class="col-sm-4 d-flex justify-content-center align-items-center"><a data-fancybox="gallery" data-caption="Poza Bucatar" href="assets/img/Chef%20photo%201.png"><img class="img-fluid" src="assets/img/Chef%20photo%201.png" alt="Poza cu unul dintre bucatari."></a></div>
+                <div class="col-sm-4 d-flex justify-content-center align-items-center"><a data-fancybox="gallery" data-caption="Poza Bucatar" href="assets/img/Chef%20plaiting%20photo%201.jpg"><img class="img-fluid" src="assets/img/Chef%20plaiting%20photo%201.jpg" alt="Poza cu unul dintre bucatari care monteaza pe farfurii."></a></div>
+                <div class="col-sm-4 d-flex justify-content-center align-items-center"><a data-fancybox="gallery" data-caption="Poza Restaurant" href="assets/img/Restaurant%20photo%20with%20logo.png"><img class="img-fluid" src="assets/img/Restaurant%20photo%20with%20logo.png" alt="Poza din fata restaurantului la lasarea serii."></a></div>
+                <div class="col-sm-4 d-flex justify-content-center align-items-center"><a data-fancybox="gallery" data-caption="Poza Bucatar" href="assets/img/cook%20preparing%20food%20photo.jpg"><img class="img-fluid" src="assets/img/cook%20preparing%20food%20photo.jpg" alt="Poza cu unul dintre bucatari care gateste."></a></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="#" style="font-family: ABeeZee, sans-serif;font-size: 29px;color: var(--bs-form-invalid-border-color);">ECHIMBURI&nbsp;<span style="font-size: 22px;color: var(--bs-form-invalid-color);"><br>RESTAURANT</span></a></h3>
+                <p class="company-name" style="font-size: 19px;">ECHIMBURI&nbsp;© 2023</p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon" style="color: var(--bs-form-invalid-color);"> </span>
+                    <p style="color: var(--bs-form-invalid-border-color);"><span class="new-line-span">Strada: Revolutionarilor&nbsp; Nr:2</span> Craiova, Romania</p>
+                </div>
+                <div style="color: var(--bs-form-invalid-border-color);"><i class="fa fa-phone footer-contacts-icon" style="color: var(--bs-form-invalid-color);"></i>
+                    <p class="footer-center-info email text-start" style="color: var(--bs-form-invalid-border-color);"> +40 72 92 34 036</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon" style="color: var(--bs-form-invalid-color);"></i>
+                    <p> <a href="#" target="_blank" style="color: var(--bs-form-invalid-border-color);">echimburi@restaurant.com</a></p>
+                </div>
+            </div>
+            <div class="col-md-4 footer-about">
+                <div class="social-links social-icons"><a href="#" style="color: var(--bs-form-invalid-border-color);margin: 16px;"><i class="fa fa-facebook"></i></a><a href="#" style="margin: 16px;"><i class="fa fa-twitter" style="color: var(--bs-form-invalid-border-color);"></i></a><a href="#" style="margin: 16px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram" style="color: var(--bs-form-invalid-border-color);">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                        </svg></a></div>
+                <p style="margin: 20px;">PROGRAM&nbsp; &nbsp; L - V : 9:30&nbsp; -&nbsp; 23:30<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; S - D : 10:00 - 2:00</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <script src="assets/js/review/addReview.js"></script>
+    <script src="assets/js/review/deleteReview.js"></script>
+    <script src="assets/js/review/editReview.js"></script>
+    <script src="assets/js/logIn/sowModalLogIn.js"></script>
+    <script src="assets/js/logIn/connectionThroughLoginModal.js"></script>
+    <script src="assets/js/displayFunctionalities/displayWelcomePageFunctionalities.js"></script>
+</body>
+
+</html>
